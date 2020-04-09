@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Твои Чеки</string>
+    <string name="NA">NA</string>
+    <string name="action_receipt_add">Добавить чек</string>
+    <string name="action_recogition_add">Добавить товар</string>
+    <string name="action_recogition_bad">Сообщить о плохом распозновании чека</string>
+    <string name="good_hint">Товар</string>
+    <string name="hint_for_item">за ед.</string>
+    <string name="hint_quantity">кол-во</string>
+    <string name="hint_shop_address">Адрес</string>
+    <string name="hint_shop_name">Название магазина</string>
+    <string name="hint_timestamp">Дата</string>
+    <string name="hint_total">Всего</string>
+    <string name="input_error_address">Введите адрес магазина</string>
+    <string name="input_error_for_item">Укажите кол-во товара</string>
+    <string name="input_error_name">Введите название товара</string>
+    <string name="input_error_quantity">Укажите кол-во товара</string>
+    <string name="input_error_shop_name">Введите название магазина</string>
+    <string name="loading">Загрузка</string>
+    <string name="no_connection">Нет соединения с интернетом</string>
+    <string name="price_hint">Цена</string>
+    <string name="skip">Пропустить</string>
+    <string name="title_activity_receipt">Просмотр Чека</string>
+    <string name="total">Всего:</string>
+    <string name="discount">скидка</string>
+</resources>

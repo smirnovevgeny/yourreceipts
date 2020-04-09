@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View android:background="@color/colorPrimary"
+        android:layout_width = "match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view"
+        android:layout_alignBottom="@+id/imageView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingBottom="@dimen/padding"
+        android:paddingTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_functions_black_48px"
+        android:id="@+id/imageView8"
+        android:layout_below="@+id/container_shop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:padding="@dimen/padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NA"
+        android:id="@+id/total"
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/view"
+        android:layout_toRightOf="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView8" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:paddingBottom="0dp"
+        android:id="@+id/container_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </FrameLayout>
+
+    <FrameLayout
+        android:padding="@dimen/padding"
+        android:id="@+id/container_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view">
+    </FrameLayout>
+
+
+</RelativeLayout>

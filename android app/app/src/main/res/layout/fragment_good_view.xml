@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding"
+    >
+    <TextView
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/good_hint"
+        android:id="@+id/good"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <TextView
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_total"
+        android:id="@+id/total"
+        android:layout_below="@+id/good"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4" />
+
+    <View android:background="@color/colorPrimary"
+        android:layout_width = "match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/quantity"
+        android:id="@+id/view"
+        android:layout_alignLeft="@+id/for_item"
+        android:layout_alignStart="@+id/for_item" />
+
+    <TextView
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:padding="@dimen/padding"
+        android:layout_alignBaseline="@+id/for_item"
+        android:layout_alignBottom="@+id/for_item"
+        android:layout_toRightOf="@+id/for_item"
+        android:layout_toEndOf="@+id/for_item"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_quantity"
+        android:id="@+id/quantity"
+        android:layout_alignBaseline="@+id/total"
+        android:layout_alignBottom="@+id/total"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_shopping_cart_black_48px"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/padding"/>
+
+    <TextView
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_for_item"
+        android:id="@+id/for_item"
+        android:layout_below="@+id/good"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+
+    <TextView
+        android:text="@string/discount"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/discount"
+        android:layout_above="@+id/view"
+        android:layout_toRightOf="@+id/minus"
+        android:layout_toEndOf="@+id/minus" />
+
+    <TextView
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:padding="@dimen/padding"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/total"
+        android:layout_alignBottom="@+id/total"
+        android:layout_toRightOf="@+id/discount"
+        android:layout_toEndOf="@+id/discount" />
+
+    <TextView
+        android:text="-"
+        android:padding="@dimen/padding"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minus"
+        android:layout_above="@+id/view"
+        android:layout_alignBaseline="@+id/quantity"
+        android:layout_toRightOf="@+id/quantity"
+        android:layout_toEndOf="@+id/quantity"
+        android:layout_alignTop="@+id/textView4" />
+
+
+</RelativeLayout>

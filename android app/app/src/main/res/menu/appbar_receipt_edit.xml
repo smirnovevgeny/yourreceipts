@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_receipt_add"
+        android:icon="@drawable/ic_add_shopping_cart_black_48px"
+        android:title="@string/action_recogition_add"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_recognition_bad"
+        android:icon="@drawable/ic_thumb_down_black_48px"
+        android:title="@string/action_recogition_bad"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_receipt_save"
+        android:icon="@drawable/ic_save_black_48px"
+        android:title="@string/action_receipt_add"
+        app:showAsAction="ifRoom"/>
+
+</menu>

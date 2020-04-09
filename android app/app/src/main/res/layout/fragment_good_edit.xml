@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4">
+    <android.support.design.widget.TextInputEditText
+        android:textSize="@dimen/text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/good_hint"
+        android:id="@+id/good"
+         />
+    </android.support.design.widget.TextInputLayout>
+
+    <View android:background="@color/colorPrimary"
+        android:layout_width = "match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/quantity"
+        android:id="@+id/view"
+        android:layout_alignLeft="@+id/for_item"
+        android:layout_alignStart="@+id/for_item" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:text="*"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_alignBaseline="@+id/for_item"
+        android:layout_alignBottom="@+id/for_item"
+        android:layout_toRightOf="@+id/for_item"
+        android:layout_toEndOf="@+id/for_item"
+        android:id="@+id/multiply" />
+
+    <android.support.design.widget.TextInputEditText
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_for_item"
+        android:id="@+id/for_item"
+        android:layout_below="@+id/layout_good"
+        android:layout_alignLeft="@+id/layout_good"
+        android:layout_alignStart="@+id/layout_good" />
+
+    <android.support.design.widget.TextInputEditText
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_quantity"
+        android:inputType="numberDecimal"
+        android:id="@+id/quantity"
+        android:layout_below="@+id/layout_good"
+        android:layout_toRightOf="@+id/multiply" />
+
+    <ImageView
+        android:padding="@dimen/padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_shopping_cart_black_48px"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minus"
+        android:layout_alignBaseline="@+id/discount"
+        android:layout_alignBottom="@+id/discount"
+        android:layout_toRightOf="@+id/quantity"
+        android:layout_toEndOf="@+id/quantity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:text="="
+        android:padding="@dimen/padding"
+        android:id="@+id/equal"
+        android:layout_alignBaseline="@+id/discount"
+        android:layout_alignBottom="@+id/discount"
+        android:layout_toRightOf="@+id/discount"
+        android:layout_toEndOf="@+id/discount" />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/discount"
+        android:hint="@string/discount"
+        android:layout_above="@+id/view"
+        android:layout_toRightOf="@+id/minus"
+        android:layout_toEndOf="@+id/minus" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_total"
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:id="@+id/total"
+        android:layout_alignBaseline="@+id/quantity"
+        android:layout_alignBottom="@+id/quantity"
+        android:layout_toRightOf="@+id/equal"
+        android:layout_toEndOf="@+id/equal" />
+
+
+</RelativeLayout>

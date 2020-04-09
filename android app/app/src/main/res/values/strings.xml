@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UReceipts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip">skip</string>
+    <string name="loading">Loading</string>
+    <string name="title_activity_receipt">Receipt View</string>
+    <string name="hint_shop_name">Shop name</string>
+    <string name="hint_shop_address">Shop address</string>
+    <string name="hint_timestamp">TimeStamp</string>
+    <string name="total">Total:</string>
+    <string name="good_hint">Good</string>
+    <string name="price_hint">price</string>
+    <string name="no_connection">No internet connection</string>
+    <string name="hint_total">Total</string>
+    <string name="hint_for_item">for item</string>
+    <string name="hint_quantity">quantity</string>
+    <string name="action_receipt_add">Add receipt</string>
+    <string name="action_recogition_bad">Bad recognition</string>
+    <string name="input_error_quantity">Quantity input error</string>
+    <string name="input_error_for_item">Input error for item</string>
+    <string name="input_error_total">Input error total</string>
+    <string name="input_error_name">Input error good name</string>
+    <string name="input_error_shop_name">Input error shop name</string>
+    <string name="input_error_address">Input error address</string>
+    <string name="NA">NA</string>
+    <string name="action_recogition_add">Add good</string>
+    <string name="discount">discount</string>
+</resources>
